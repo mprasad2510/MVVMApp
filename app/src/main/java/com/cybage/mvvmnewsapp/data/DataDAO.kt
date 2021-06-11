@@ -14,7 +14,7 @@ interface DataDAO {
     fun getAllData() : Flow<List<Records>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertData(annually: List<Records>)
+    suspend fun insertData(annually: DataAnnually)
 
     @Query("delete FROM annualData")
     suspend fun deleteAllData()

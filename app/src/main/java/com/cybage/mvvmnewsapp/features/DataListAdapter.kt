@@ -5,8 +5,8 @@ import android.view.ViewGroup
 import android.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.codinginflow.mvvmnewsapp.databinding.ItemRowBinding
 import com.cybage.mvvmnewsapp.data.DataAnnually
+import com.cybage.mvvmnewsapp.databinding.ItemRowBinding
 
 class DataListAdapter : ListAdapter<DataAnnually, DataListAdapter.DataViewHolder>(DataComparator()) {
 
