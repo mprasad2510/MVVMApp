@@ -6,7 +6,7 @@ import com.cybage.mvvmnewsapp.util.networkBoundResource
 import kotlinx.coroutines.delay
 import javax.inject.Inject
 
-class DataRepository @Inject constructor(
+open class DataRepository @Inject constructor(
     private val api : DataApi,
     private val dataDatabase: DataDatabase
 ) {

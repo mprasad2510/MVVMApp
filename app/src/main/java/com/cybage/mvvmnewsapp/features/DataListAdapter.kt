@@ -2,8 +2,8 @@ package com.cybage.mvvmnewsapp.features
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.cybage.mvvmnewsapp.data.DataAnnually
 import com.cybage.mvvmnewsapp.databinding.ItemRowBinding
@@ -24,9 +24,9 @@ class DataListAdapter : ListAdapter<DataAnnually, DataListAdapter.DataViewHolder
 
     class DataViewHolder(private val binding: ItemRowBinding) :
         RecyclerView.ViewHolder(binding.root) {
-            fun bind() {
+            fun bind(data: DataAnnually) {
                 binding.apply {
-                    txtData.text = ""
+                    txtData.text = data.volume_of_mobile_data.toString()
                 }
             }
         }
