@@ -18,12 +18,12 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideRetrofit() {
+    fun provideRetrofit() =
         Retrofit.Builder()
             .baseUrl(DataApi.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-    }
+
 
     @Provides
     @Singleton

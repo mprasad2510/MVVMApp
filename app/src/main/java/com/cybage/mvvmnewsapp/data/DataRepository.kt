@@ -2,6 +2,7 @@ package com.cybage.mvvmnewsapp.data
 
 import androidx.room.withTransaction
 import com.cybage.mvvmnewsapp.api.DataApi
+import com.cybage.mvvmnewsapp.api.Result
 import com.cybage.mvvmnewsapp.util.networkBoundResource
 import kotlinx.coroutines.delay
 import javax.inject.Inject
@@ -24,7 +25,10 @@ open class DataRepository @Inject constructor(
         saveFetchResult = { data ->
             dataDatabase.withTransaction {
                 dataDAO.deleteAllData()
-                dataDAO.insertData(data)
+                data.forEach {
+                    val result = Result(it.volume_of_mobile_data,it.quarter,it._id)
+                    dataDAO.insertData(result)
+                }
             }
         }
     )

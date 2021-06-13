@@ -1,12 +1,15 @@
-import com.google.gson.annotations.SerializedName
+package com.cybage.mvvmnewsapp.api
 
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import com.cybage.mvvmnewsapp.data.Records
 
+@Entity(tableName = "annualData")
 data class Result (
 
-	@SerializedName("resource_id") val resource_id : String,
-	@SerializedName("fields") val fields : List<Fields>,
-	@SerializedName("records") val records : List<Records>,
-	@SerializedName("_links") val _links : links,
-	@SerializedName("limit") val limit : Int,
-	@SerializedName("total") val total : Int
-)
+	@ColumnInfo(name = "volume_of_mobile_data") var volume_of_mobile_data : Double,
+	@ColumnInfo(name = "quarter") var quarter : String,
+	@PrimaryKey(autoGenerate = true) @ColumnInfo (name = "_id" )var _id : Int
+	)
+
