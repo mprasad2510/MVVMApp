@@ -18,7 +18,6 @@ open class DataRepository @Inject constructor(
             dataDAO.getAllData()
         },
         fetch = {
-            delay(2000)
             api.getDataAnnually()
         },
         saveFetchResult = { data ->
