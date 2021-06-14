@@ -1,9 +1,8 @@
-package com.cybage.mvvmnewsapp.features
+package com.cybage.mvvmnewsapp.ui
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cybage.mvvmnewsapp.databinding.ActivityDataBinding
 import com.cybage.mvvmnewsapp.util.Resource

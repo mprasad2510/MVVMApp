@@ -1,12 +1,11 @@
-package com.cybage.mvvmnewsapp.features
+package com.cybage.mvvmnewsapp.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.cybage.mvvmnewsapp.api.RecordDto
-import com.cybage.mvvmnewsapp.data.Records
+import com.cybage.mvvmnewsapp.model.Records
 import com.cybage.mvvmnewsapp.databinding.ItemRowBinding
 
 class DataListAdapter : ListAdapter<Records, DataListAdapter.DataViewHolder>(DataComparator()) {

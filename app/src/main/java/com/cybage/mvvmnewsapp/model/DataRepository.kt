@@ -1,9 +1,8 @@
-package com.cybage.mvvmnewsapp.data
+package com.cybage.mvvmnewsapp.model
 
 import androidx.room.withTransaction
 import com.cybage.mvvmnewsapp.api.DataApi
 import com.cybage.mvvmnewsapp.util.networkBoundResource
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.first
 import javax.inject.Inject
 

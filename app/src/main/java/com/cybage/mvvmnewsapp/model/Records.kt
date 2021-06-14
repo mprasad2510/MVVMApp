@@ -1,4 +1,4 @@
-package com.cybage.mvvmnewsapp.data
+package com.cybage.mvvmnewsapp.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

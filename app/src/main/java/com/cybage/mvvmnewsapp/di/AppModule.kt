@@ -3,7 +3,7 @@ package com.cybage.mvvmnewsapp.di
 import android.app.Application
 import androidx.room.Room
 import com.cybage.mvvmnewsapp.api.DataApi
-import com.cybage.mvvmnewsapp.data.DataDatabase
+import com.cybage.mvvmnewsapp.model.DataDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

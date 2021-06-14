@@ -1,10 +1,9 @@
-package com.cybage.mvvmnewsapp.data
+package com.cybage.mvvmnewsapp.model
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.cybage.mvvmnewsapp.api.RecordDto
 import kotlinx.coroutines.flow.Flow
 
 @Dao

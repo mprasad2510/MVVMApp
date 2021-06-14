@@ -1,4 +1,4 @@
-package com.cybage.mvvmnewsapp.data
+package com.cybage.mvvmnewsapp.model
 
 import kotlinx.coroutines.test.runBlockingTest
 import com.google.common.truth.Truth.assertThat

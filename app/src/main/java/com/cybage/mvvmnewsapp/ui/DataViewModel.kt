@@ -1,8 +1,8 @@
-package com.cybage.mvvmnewsapp.features
+package com.cybage.mvvmnewsapp.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
-import com.cybage.mvvmnewsapp.data.DataRepository
+import com.cybage.mvvmnewsapp.model.DataRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

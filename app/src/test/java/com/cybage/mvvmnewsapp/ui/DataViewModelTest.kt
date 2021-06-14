@@ -1,8 +1,8 @@
-package com.cybage.mvvmnewsapp.features
+package com.cybage.mvvmnewsapp.ui
 
 import androidx.lifecycle.asLiveData
-import com.cybage.mvvmnewsapp.data.DataRepository
-import com.cybage.mvvmnewsapp.data.Records
+import com.cybage.mvvmnewsapp.model.DataRepository
+import com.cybage.mvvmnewsapp.model.Records
 import junit.framework.TestCase
 import org.junit.Before
 import org.junit.Test

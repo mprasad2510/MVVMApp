@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MVVMNewsApp">
-        <activity android:name="com.cybage.mvvmnewsapp.features.DataActivity">
+        <activity android:name="com.cybage.mvvmnewsapp.ui.DataActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

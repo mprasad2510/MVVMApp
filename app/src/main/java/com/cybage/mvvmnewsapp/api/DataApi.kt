@@ -1,6 +1,5 @@
 package com.cybage.mvvmnewsapp.api
 
-import com.cybage.mvvmnewsapp.data.Records
 import retrofit2.http.GET
 
 
